@@ -10,31 +10,38 @@
 
 <body>
     <header></header>
-    <article>
-        <form class='create-user-form' onsubmit="createUser(event)">
-            <div>
-                <label for="">Username</label>
-                <input type="text" placeholder="Enter User Name">
-            </div>
-            <div>
-                <label for="">First Name</label>
-                <input type="text" placeholder="Enter First Name">
-            </div>
-            <div>
-                <label for="">Last name</label>
-                <input type="text" placeholder="Enter Last Name">
-            </div>
-            <div>
-                <button type="submit">Create Username</button>
-                <button type="reset">Reset</button>
-            </div>
-        </form>
+    <section>
+        </article>
+        <option value="">Registered users</option>
+        <label for="registerd-user-list"></label>
+        <select id="registerd-user-list" size="10"></select>
+        <article>
+            <article class='create-user-form'>
+                <form onsubmit="createUser(event)">
+                    <div>
+                        <label for="">Username</label>
+                        <input id="userName" type="text" placeholder="Enter User Name">
+                    </div>
+                    <div>
+                        <label for="">First Name</label>
+                        <input id="firstName" type="text" placeholder="Enter First Name">
+                    </div>
+                    <div>
+                        <label for="">Last name</label>
+                        <input id="lastName" type="text" placeholder="Enter Last Name">
+                    </div>
+                    <div>
+                        <button type="submit">Create User</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
 
 
-    </article>
-
-    <script src="/Static/js/functions.js"></script>
+            </article>
+    </section>
     <script src="/Static/js/users.js"></script>
+    <script src="/Static/js/functions.js"></script>
+
 </body>
 
 </html>

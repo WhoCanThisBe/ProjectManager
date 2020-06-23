@@ -4,12 +4,12 @@
     getProjects();
 })();
 
-//Register new Project functions
+//Get projectsList
 function getProjects() {
     return JSON.parse(window.localStorage.getItem('projects')) ?? [];
 }
 
-
+//Register new Project functions
 function saveProjects(projectList) {
     return window.localStorage.setItem('projects', JSON.stringify(projectList));
 }
@@ -23,14 +23,18 @@ function navBar() {
         <li><a class="text" href="/html/users.html">Users</a></li>
         <li><a class="text" href="/html/projects.html">Create Project</a></li>
         <li><a class="text" href="#"> Project Settings</a></li>
-        <li><a class="current text" href="/html/projects.html">Project Manager</a></li>
-    `;
+        <li><a class="current text" href="/html/projects.html">Project Manager</a></li>`;
 
     document.getElementsByTagName('header')[0].appendChild(ul)
 }
 
+//Get user list
+function getUsers() {
+    return JSON.parse(window.localStorage.getItem('userList')) ?? [];
+}
 
-
-
+function saveUsers(userList) {
+    return window.localStorage.setItem('userList', JSON.stringify(userList))
+}
 
 
