@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/Static/css/style.css">
+</head>
+
+<body>
+    <header></header>
+    <section>
+        <article>
+            <form class='create-project-forms' onsubmit="createProj(event)">
+                <h1>Create a new Project</h1>
+                <div>
+                    <label>Project name:</label>
+                    <input type="text" placeholder="Enter project name" id="projectName">
+                </div>
+                <div>
+                    <label>Start Date</label>
+                    <input type="date" id="startDate">
+                </div>
+                <div>
+                    <label>End Date</label>
+                    <input type="date" id="endDate">
+                </div>
+                <div>
+                    <h4>Project description</h4>
+                    <textarea id="projectDescription" cols="30" rows="10" placeholder="Enter Description"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Create Project</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </article>
+
+    </section>
+    <script src="/Static/js/projects.json"></script>
+    <script src="/Static/js/projectRegister.js"></script>
+    <script src="/Static/js/functions.js"></script>
+</body>
+
+</html>
