@@ -10,11 +10,29 @@
 
 <body>
     <header></header>
+
+    <!--TODO: Find a better solution for underneath, example have a div class for popup-->
+
     <section>
+        <!--Registered User-->
+        <article>
+            <div>
+                <input type="button" value="Show Registerd Users" class="show-user-btn btn" style="display: block;">
+            </div>
+            <!--registered userlist-->
+            <div id="user-list" style="display: none ">
+                <option value="">Registered users</option>
+                <label for="registerd-user-list"></label>
+                <select id="registerd-user-list" size="10">
+                    <option value="">Choose here</option>
+                </select>
+                <div>
+                    <input type="button" value="Close User List" class="close-user-list-btn btn">
+                </div>
+            </div>
         </article>
-        <option value="">Registered users</option>
-        <label for="registerd-user-list"></label>
-        <select id="registerd-user-list" size="10"></select>
+        <br>
+        <!--Create userForm-->
         <article>
             <article class='create-user-form'>
                 <form onsubmit="createUser(event)">
@@ -39,8 +57,8 @@
 
             </article>
     </section>
-    <script src="/Static/js/users.js"></script>
     <script src="/Static/js/functions.js"></script>
+    <script src="/Static/js/users.js"></script>
 
 </body>
 
